@@ -1,1 +1,0 @@
-Проект сайта для BiomedisOnline
