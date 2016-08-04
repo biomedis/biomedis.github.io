@@ -1,0 +1,328 @@
+html, body {
+    margin:0px; padding:0px;
+    font-size:12pt;
+    font-family:Arial;
+    background-color: #d6d6d6;
+}
+
+
+a:link {
+    transition: 0.5s !important;
+}
+
+a:hover {
+    transition: 0.5s !important;
+    text-decoration: none !important;
+}
+
+
+/** Menu Style **/
+.top-menu {
+    max-width:1280px;
+    height:70px;
+    padding-top:10px;
+    background-color: #fff;
+    box-shadow:0px 0px 15px 0px #c8c8c8;
+    opacity:0.93;
+}
+
+.logotype {
+    width:200px; transition: 0.5s;
+    position:absolute;
+    top:3px; left:30px;
+}
+.logotype:hover {
+    width:215px; transition: 1s;
+}
+
+
+.navbar-header {
+    background-color: #fff !important;
+}
+
+.left-corner {
+    position:absolute; left:0px; top:0px;
+    opacity:0.6;
+}
+
+.navbar-nav {
+    background-color: #fff;
+}
+
+.icon-bar {
+    border: 1px solid #6c6c6c !important;
+}
+
+.navbar-nav > li > a:link {
+    color:#66668f !important;
+}
+
+.navbar-nav > li > a:hover {
+    color:#9393b8 !important;
+}
+
+.navbar-nav > li > a:visited {
+    color:#66668f !important;
+}
+
+
+.navbar-nav > li:last-child > a:link {
+    color:#ababb7 !important;
+}
+
+.navbar-nav > li:last-child  > a:hover {
+    color:#8a8a93 !important;
+}
+
+.navbar-nav > li:last-child  > a:visited {
+    color:#ababb7 !important;
+}
+/** end-Menu Style **/
+
+
+/** Block styles **/
+
+.main-block {
+    max-width:1280px;
+    box-shadow:0px 0px 15px 0px #c8c8c8;
+    overflow:hidden;
+    background-color: #fff;
+}
+
+/* GetStarted block */
+.get-started {
+    padding: 30px;
+    margin-top:70px;
+    background-color: #e7e5f6;
+    position:relative;
+    overflow: hidden;
+}
+
+.get-started > h4 {
+    margin-bottom:40px;
+}
+
+.get-started-btn {
+    padding-top:10px; font-size:14pt; font-weight:bolder;
+}
+
+.hand-tablet {
+    max-width:200px;
+    position:absolute;
+    right: 20px;
+    bottom:0px;
+}
+/* GetStarted block */
+
+/* What is Block */
+
+.what-is {
+    padding-bottom:10px;
+}
+.what-is > div:nth-child(2) > p {
+    max-width:600px;
+    margin:0px auto;
+}
+.text-right > p:first-child {
+    border-bottom:3px solid #50508d;
+    padding-bottom:10px;
+}
+/* end What is block */
+
+/* Biomedis Online Icons */
+.biomedis-online-icons {
+    background-color: #50508d;
+    overflow: hidden;
+}
+
+.icon-items > div {
+    margin-top:40px;
+}
+
+.icon-items > div > div {
+    width:200px; margin:0px auto; color:#fff; text-align: center; font-size:14pt;
+}
+
+.icon-items > div > div > p {
+    margin-top:15px;
+}
+
+
+/* end Biomedis Online Icons */
+
+/* Connect block */
+.connect-block {
+    overflow:hidden;
+}
+
+.notebook-man {
+    position:absolute;
+    left:30px;
+    top:70px;
+}
+
+.running-girl{
+    position:absolute;
+    right:30px;
+    top:0px;
+}
+
+.text-block-connect {
+    color: #878787;
+    font-size:13pt;
+}
+
+.text-block-connect > p {
+    padding:5px; background:rgba(255,255,255, 0.8);
+}
+
+/* end Connect block */
+
+/* get started two */
+.get-started-two {
+    background: url('../imagesi/getstarted2.jpg') center;
+    height:440px;
+}
+/* end get started two */
+
+/* Instructions */
+
+.instructions > div {
+    border-bottom:1px solid #d8d8d8;
+    padding:15px;
+}
+
+.instructions > div:nth-child(2) > div:first-child, .instructions > div:nth-child(3) > div:first-child {
+    padding-top:10%;
+    font-size:14pt;
+    color: #878787;
+}
+
+.instructions > div:nth-child(4) >  div:last-child, .instructions > div:nth-child(5) > div:last-child, .instructions > div:nth-child(6) > div:last-child {
+    padding-top:10%;
+    font-size:14pt;
+    color: #878787;
+}
+
+.instructions > div:nth-child(2) >  div:last-child , .instructions > div:nth-child(3) > div:last-child  {
+    max-width:500px; margin:0px auto;
+}
+
+.instructions > div:nth-child(4) > div:first-child, .instructions > div:nth-child(5) > div:first-child, .instructions > div:nth-child(6) > div:first-child {
+    max-width:500px; margin:0px auto;
+}
+
+.video-block {
+    margin-bottom: 50px;
+}
+
+.video-block > div {
+    background: url("../imagesi/steps/video.png") no-repeat center;
+    padding-top:45px; padding-left:5px;
+    width: 100%; height:318px;
+}
+
+/* end Instructions */
+
+
+/* FOOTER */
+.footer {
+    background-color:#5a5a94;
+}
+
+.footer > div:nth-child(1), .footer > div:nth-child(2) {
+    padding-left:80px; padding-right:80px;
+}
+
+.white-line {
+    background:rgba(255,255,255, 0.1);
+    padding:10px;
+    font-size:14pt;
+}
+
+.socials {
+    margin:0px; padding:0px;
+}
+
+.socials > li {
+    margin:0px 10px 0px 0px; padding:0px;
+}
+
+.socials > li:first-child {
+    opacity: 0.5;
+    font-weight:bolder;
+}
+
+.socials > li > a > img {
+    width:35px;
+    transition: 1.5s;
+}
+
+.socials > li > a > img:hover {
+    box-shadow: 0px 0px 10px 0px #f3bff1;
+    transition: 0.5s;
+}
+
+.footer-menu {
+    padding:0px; margin:0px; list-style-type: none; -moz-list-style-type: none; position:relative; z-index:100;
+}
+
+.footer-menu > li > a:link {
+    color: #a5a5c1;
+}
+
+.footer-menu > li > a:hover {
+    color: #fff;
+}
+
+.footer-menu > li > a:active {
+     color: #fff;
+ }
+
+.footer-menu > li > a:visited {
+    color: #a5a5c1;
+}
+
+.footer-menu > li {
+    padding:0px;
+}
+
+.corner-right-footer {
+    background-image: url('../imagesi/right-corner.png');
+    position:absolute;
+    bottom:0px; right:0px;
+    width:989px; height:291px;
+}
+
+/* end FOOTER */
+
+
+/** end Block styles **/
+
+
+
+/** Services **/
+
+/*login*/
+.login-container {
+}
+
+.login-window {
+    max-width:700px;
+    margin:0px auto;
+    padding:20px;
+    background:rgba(255,255,255,0.1);
+}
+
+.login-group {
+    padding-right:10%; padding-left:10%;
+}
+
+.back-home {
+    position:fixed;
+    top:10px; left:10px;
+    width:90px; font-weight:bolder;z-index:10;
+}
+/*end login*/
+
+/** end Services **/

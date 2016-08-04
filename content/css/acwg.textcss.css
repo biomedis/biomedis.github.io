@@ -1,0 +1,166 @@
+/* Main elems and class styles */
+/*
+
+page font-size, family and other settings here
+service features, text decorations, aligns, color and other things
+
+*/
+
+html, body {
+    font-size: 12pt;
+    font-family: Arial;
+}
+
+.clear-bth {clear:both;}
+
+.shadow-black {
+    background-color: rgba(0, 0, 0, 0.3);
+    position:fixed; top:0px; left:0px; bottom:0px; right:0px; z-index:100;
+}
+
+.shadow-white {
+    background-color: rgba(255, 255, 255, 0.3);
+    position:fixed; top:0px; left:0px; bottom:0px; right:0px;
+    z-index:100;
+}
+
+
+/* Font colors */
+.clr-black {color:#000;}
+.clr-white {color:#fff;}
+.clr-gray {color:#878787;}
+.clr-darkgray {color:#363636;}
+.clr-lightgray {color:#c2c2c2;}
+
+.clr-blue {color:#1154c4;}
+.clr-darkblue {color:#002869;}
+.clr-lightblue {color:#6c94d6;}
+
+.clr-red {color:#bc0000;}
+.clr-lightred {color:#e45555;}
+.clr-darkred {color:#5d0000;}
+.clr-pink {color:#eec6e8;}
+
+.clr-yellow {color:#eee600;}
+.clr-lightyellow {color:#fffb80;}
+.clr-darkyellow {color:#d8d000;}
+.clr-gold {color:#d1bd14;}
+
+.clr-green {color:#60d114;}
+.clr-lightgreen {color:#9aec63;}
+.clr-darkgreen {color:#296700;}
+.clr-lazure {color:#3bdfb3;}
+.clr-teal {color:#02f2de;}
+
+.clr-violet {color:#5a5a94;}
+.clr-lightviolet {color:#b6549f;}
+.clr-darkviolet {color:#50508d;}
+
+
+/* Alignments */
+.alg-center {text-align:center;}
+.alg-right {text-align:right;}
+.alg-left {text-align:left;}
+.alg-just {text-align:justify;}
+
+.pdng-0 {padding:0px;}
+.pdng-5 {padding:5px;}
+.pdng-left-5 {padding-left:5px;}
+.pdng-right-5 {padding-right:5px;}
+.pdng-top-5 {padding-top:5px;}
+.pdng-bottom-5 {padding-bottom:5px;}
+
+.pdng-10 {padding:10px;}
+.pdng-left-10 {padding-left:10px;}
+.pdng-right-10 {padding-right:10px;}
+.pdng-top-10 {padding-top:10px;}
+.pdng-bottom-10 {padding-bottom:10px;}
+
+.pdng-15 {padding:15px;}
+.pdng-left-15 {padding-left:15px;}
+.pdng-right-15 {padding-right:15px;}
+.pdng-top-15 {padding-top:15px;}
+.pdng-bottom-15 {padding-bottom:15px;}
+
+.pdng-20 {padding:20px;}
+.pdng-left-20 {padding-left:20px;}
+.pdng-right-20 {padding-right:20px;}
+.pdng-top-20 {padding-top:20px;}
+.pdng-bottom-20 {padding-bottom:20px;}
+
+.pdng-25 {padding:25px;}
+.pdng-left-5 {padding-left:25px;}
+.pdng-right-5 {padding-right:25px;}
+.pdng-top-5 {padding-top:25px;}
+.pdng-bottom-5 {padding-bottom:25px;}
+
+.pdng-30 {padding:30px;}
+.pdng-left-30 {padding-left:30px;}
+.pdng-right-30 {padding-right:30px;}
+.pdng-top-30 {padding-top:30px;}
+.pdng-bottom-30 {padding-bottom:30px;}
+
+
+.mgn-0 {margin:0px;}
+.mgn-auto {margin:0px auto;}
+.mgn-5 {margin:5px;}
+.mgn-left-5 {margin-left:5px;}
+.mgn-right-5 {margin-right:5px;}
+.mgn-top-5 {margin-top:5px;}
+.mgn-bottom-5 {margin-bottom:5px;}
+
+.mgn-10 {margin:10px;}
+.mgn-left-10 {margin-left:10px;}
+.mgn-right-10 {margin-right:10px;}
+.mgn-top-10 {margin-top:10px;}
+.mgn-bottom-10 {margin-bottom:10px;}
+
+.mgn-15 {margin:15px;}
+.mgn-left-15 {margin-left:15px;}
+.mgn-right-15 {margin-right:15px;}
+.mgn-top-15 {margin-top:15px;}
+.mgn-bottom-15 {margin-bottom:15px;}
+
+.mgn-20 {margin:20px;}
+.mgn-left-20 {margin-left:20px;}
+.mgn-right-20 {margin-right:20px;}
+.mgn-top-20 {margin-top:20px;}
+.mgn-bottom-20 {margin-bottom:20px;}
+
+.mgn-25 {margin:25px;}
+.mgn-left-25 {margin-left:25px;}
+.mgn-right-25 {margin-right:25px;}
+.mgn-top-25 {margin-top:25px;}
+.mgn-bottom-25 {margin-bottom:25px;}
+
+.mgn-30 {margin:30px;}
+.mgn-left-30 {margin-left:30px;}
+.mgn-right-30 {margin-right:30px;}
+.mgn-top-30 {margin-top:30px;}
+.mgn-bottom-30 {margin-bottom:30px;}
+
+
+/* Text styles */
+.txt-shadow {text-shadow: 0px 0px 15px #5d5d5d, 0px 0px 15px #5d5d5d;}
+.txt-shadowlight {text-shadow: 0px 0px 15px #5d5d5d;}
+.txt-bold {font-weight:bolder;}
+.txt-curs {font-style: italic;}
+
+
+/* services */
+div.scrollup {
+    position:fixed; right:10px; bottom:10px;
+    padding: 4px 10px;
+    border-radius:20px;
+    cursor:pointer;
+    display:none;
+    text-align:center;
+    color:white;
+    background-color: #b6549f;
+    font-size:16pt;
+    z-index:15000; transition:1s;
+}
+
+div.scrollup:hover {
+    background-color:#50508d; transition:1s;
+}
