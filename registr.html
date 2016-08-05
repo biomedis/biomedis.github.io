@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css"/>
+
+    <link rel="stylesheet" href="css/acwg.textcss.css"/>
+    <link rel="stylesheet" href="css/general.css"/>
+    <link rel="stylesheet" href="css/registration.css"/>
+
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="fancybox/jquery.fancybox.pack.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/general-scripts.js"></script>
+
+    <title>Biomedis Online</title>
+
+</head>
+
+<body>
+
+<div class="container-fluid main-block">
+
+    <nav role="navigation" class="navbar center-block top-menu navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" style="background-color:#e0e0e0;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="imagesi/left-corner.jpg" class="left-corner"/>
+            <a href="#" class="navbar-brand"><img src="imagesi/logo.png" class="logotype"/></a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse" style="padding-right:15px;">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Wiki</a></li>
+                <li><a href="#">Блоги</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Биомедис</a></li>
+
+                <li><a href="login.html">ВОЙТИ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="row reg-main-block wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.0s">
+        <div class="col-lg-12">
+            <h2 class="alg-center clr-darkviolet txt-bold">регистрация</h2>
+            <h3 class="alg-center clr-darkviolet txt-bold">Мы будем рады познакомиться с вами</h3>
+            <p class="visible-xs-block mgn-top-30 pdng-top-5"></p>
+            <div class="row reg-container">
+                <div class="col-lg-12">
+                    <div>
+                        <img src="imagesi/registration/women.png" class="woman"/>
+                        <form class="registration-form">
+                            <section>
+                                <h3 class="alg-left clr-lightgray">Как нам к вам обращаться?</h3>
+                                <div class="form-inline alg-center">
+                                    <input type="text" class="form-control input-lg" name="firstName" placeholder="Введите ваше имя">
+                                    <input type="text" class="form-control input-lg" name="lastName" placeholder="Введите вашу фамилию">
+                                   <button type="button" disabled="disabled" class="btn btn-primary next-button btn-lg">Принять</button>
+                                </div>
+
+                            <div class="message"></div>
+                            </section>
+
+                            <section class="invisible">
+                                <h3 class="alg-left clr-lightgray">Придумайте себе короткий логин, чтобы можно было быстрее заходить на сайт</h3>
+                                <div class="form-inline">
+                                    <input type="text" class="form-control input-lg" name="login" placeholder="Введите логин"/>
+                                    <button type="button" disabled="disabled" class="btn btn-primary next-button btn-lg">Принять</button>
+                                </div>
+
+                                <div class="message"></div>
+                            </section>
+
+                            <section class="invisible">
+                                <h3 class="alg-left clr-lightgray">Теперь, когда мызнакомы нам необходимо узнать ваш адрес электронной почты</h3>
+                                <div class="form-inline">
+                                    <input type="email" class="form-control input-lg" name="email" placeholder="Введите ваш e-mail"/>
+                                    <button type="button" disabled="disabled" class="btn btn-primary next-button btn-lg">Принять</button>
+                                </div>
+
+                                <div class="message"></div>
+                            </section>
+
+                            <section class="invisible">
+                                <h3 class="alg-left clr-lightgray">А сейчас придумайте себе хороший пароль, с помощью которого вы будете заходить на сайт</h3>
+                                <div class="form-inline">
+                                    <input type="password" class="form-control input-lg" name="password" placeholder="Введите пароль"/>
+                                    <input type="password" class="form-control input-lg" disabled="disabled" name="passwordCheck" placeholder="Повторите пароль"/>
+                                    <button type="button" disabled="disabled" class="btn btn-primary next-button btn-lg">Принять</button>
+                                </div>
+
+                                <div class="message"></div>
+                            </section>
+                            <section class="invisible alg-center">
+                                <h3 class="alg-left clr-darkviolet"><b>Отлично!</b> Ваша базовая анкета заполнена. Теперь вы можете зарегистрироваться</h3>
+                                <a href="main.html" class="btn btn-lg btn-success">Зарегистрироваться</a>
+                                <h5 class="alg-center clr-lightgray">Вы всегда сможете изменить информацию о себе в личном кабинете</h5>
+                            </section>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row footer wow fadeIn" data-wow-duration="0.6s" data-wow-delay="0.3s" data-wow-offset="100">
+        <div class="col-lg-12 mgn-top-20 white-line clr-white">
+            <ul class="list-inline socials">
+                <li>Читать о BiomedisOnline</li>
+                <li><a href="#"><img src="imagesi/vk.jpg"/></a></li>
+                <li><a href="#"><img src="imagesi/facebook.jpg"/></a></li>
+                <li><a href="#"><img src="imagesi/twitter.jpg"/></a></li>
+                <li><a href="#"><img src="imagesi/instagram.jpg"/></a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 mgn-top-25">
+            <span class="clr-white txt-bold">Разделы</span>
+            <ul class="footer-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Wiki</a></li>
+                <li><a href="#">Приборы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Консультация</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 alg-center" style="position: relative; z-index:10; bottom:-15px;">
+            <ul class="list-inline footer-menu-politic">
+                <li><b>&copy; BiomedisOnline, 2016</b></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Условия и соглашения</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Обратная свзяь</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 alg-center white-line clr-white mgn-top-15">
+            <img src="imagesi/logo-biomedis.png" width="120"/>
+            <div class="corner-right-footer"></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Service Block -->
+<div class="scrollup">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+</div>
+<!-- END Service Block-->
+
+</body>
+
+</html>
