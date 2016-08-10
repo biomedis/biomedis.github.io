@@ -1,0 +1,42 @@
+.chat-box-left > div > div:first-child{
+    max-height:500px;
+    overflow-y: scroll;
+
+}
+.chat-box-right {
+    border-left: 1px solid #c9c9c9;
+}
+
+.chat-message {
+    padding:14px;
+    border-radius:8px;
+}
+
+.incoming-message {
+    background:rgba(43, 102, 154, 0.1);
+    text-align:right;
+    margin-left:20px;
+}
+
+.user-message {
+    background:rgba(255,255,255, 0.9);
+    margin-right:20px;
+}
+
+ul.dialog-list {
+    list-style-type: none;
+    padding:0px; margin:0px;
+    overflow-y: scroll;
+    max-height:600px;
+}
+
+ul.dialog-list li {
+    border-bottom:1px solid #c9c9c9;
+    padding:10px;
+    color: #50508e;
+}
+ul.dialog-list li.active {
+    background-color: #50508e;
+    color: #fff;
+}
+

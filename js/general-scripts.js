@@ -22,6 +22,9 @@ var main = {
             this.registration.sectionsListeners.initLoginListener();
             this.registration.sectionsListeners.initEmailListener();
             this.registration.sectionsListeners.initPasswordListener();
+
+            $(".messages-block").scrollTop($(".messages-block > div").height());
+
         },
     registration: {
         sections: {
@@ -214,4 +217,8 @@ var main = {
 
 $(document).ready(function(){
     main.initialize();
+});
+
+$(document).load(function(){
+
 });

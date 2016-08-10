@@ -12,15 +12,17 @@
 
     <link rel="stylesheet" href="css/acwg.textcss.css"/>
     <link rel="stylesheet" href="css/general.service.css"/>
+    <link rel="stylesheet" href="css/general.chat.css"/>
     <link rel="stylesheet" href="css/mainmenu.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
+
+    <link rel="stylesheet" href="css/data-user.css"/>
 
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/general-scripts.js"></script>
-
     <title>Biomedis Online</title>
 
 </head>
@@ -77,15 +79,15 @@
                     <li class="visible-xs-block  dropup active" style="width:60px;">
                         <a class="dropdown-toggle active" data-toggle="dropdown" href="#">меню</a>
                         <ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
-                            <li><a href="#" class="active">сервисы</a></li>
-                            <li><a href="#">данные</a></li>
-                            <li><a href="#">сообщения (3)</a> </li>
+                            <li><a href="main.html">сервисы</a></li>
+                            <li><a href="userdata.html">данные</a></li>
+                            <li class="active"><a href="messages.html" class="active">сообщения (3)</a> </li>
                             <li><a href="#">подписки</a></li>
                         </ul>
                     </li>
-                    <li class="active hidden-xs"><a href="main.html" class="active">сервисы</a></li>
+                    <li class="hidden-xs"><a href="main.html">сервисы</a></li>
                     <li class="hidden-xs"><a href="userdata.html">данные</a></li>
-                    <li class="hidden-xs"><a href="messages.html">сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
+                    <li class="active hidden-xs"><a href="messages.html" class="active">сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
                     <li class="hidden-xs"><a href="subscribes.html">подписки</a></li>
                 </ul>
             </div>
@@ -95,132 +97,74 @@
 
     <div class="row wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left-container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-user-activity">
-                    <div class="tile">
-                        <div>моя активность</div>
 
-                        <section>
-                            <div><img src="imagesi/statistic.png"/></div>
-                            <div><a href="#">статистика</a></div>
-                            <div><span class="badge"></span></div>
-                            <div class="clear-bth"></div>
-                        </section>
+            <div class="row" style="background:rgba(255,255,255,0.3);">
 
-                        <section>
-                            <div><img src="imagesi/progr.png"/></div>
-                            <div><a href="#">программы</a></div>
-                            <div><span class="badge">1</span></div>
-                            <div class="clear-bth"></div>
-                        </section>
+                <div class="col-lg-8 chat-box-left">
+                    <div class="row">
+                        <div class="col-lg-12 messages-block">
+                            <div>
+                                <p class="alg-center old-messages clr-lightgray"><span class="glyphicon glyphicon-chevron-up"></span> загрузить более ранние сообщения</p>
+                                <p class="chat-message incoming-message">
+                                    Я начал читать статью вашу.
+                                </p>
+                                <hr/>
+                                <h4 class="alg-center clr-lightgray todaymark">12.08</h4>
+                                <p class="chat-message incoming-message">
+                                    Я начал читать статью вашу.
+                                </p>
+                                <p class="chat-message incoming-message">
+                                    Да, кстати, добрый день...
+                                </p>
+                                <p class="chat-message user-message">
+                                    Здравствуйте!<br/>
+                                    Должна сказать мне это приятно, напишите как прочитаете. Мне просто очень важно, чтобы эта статья была хорошо написана с точки зрения профессионализма. Скажите мне всю критику, которую сочтете нужным, так как у вас опыт большой, то вы в этой теме явно хорошо осведомлены, Иван.
+                                </p>
+                                <p class="chat-message incoming-message">
+                                    Ну, хорошо, я вам напишу позже, Вика.
+                                </p>
 
-                        <section>
-                            <div><img src="imagesi/answers.png"/></div>
-                            <div><a href="#">ответы</a></div>
-                            <div><span class="badge">3</span></div>
-                            <div class="clear-bth"></div>
-                        </section>
-
-
+                                <p class="chat-message user-message">
+                                    Ладно, я буду ждать, когда вы прочитаете статью, спасибо :)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <form>
+                                <textarea class="form-control" rows="3" style="min-width:100%; max-width:100%; min-height:100px; max-height:100px; margin-bottom:5px;" placeholder="Введите сообщение"></textarea>
+                                <button type="submit" class="btn btn-primary pull-right">отправить <span class="glyphicon glyphicon-chevron-right"></span></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 tile-base tile-news">
-                    <div class="tile">
-                        <div>
-                            <div class="visible-xs-block" style="margin-top:40px;"></div>
-                            <img src="imagesi/newspapperman.png"/>
-                        </div>
-                        <div>
-                            <ul class="news-list">
-                                <li><a href="#">Появился новый раздел в Wiki БРТ</a></li>
-                                <li><a href="#">Обновлена база интересных подписок</a></li>
-                                <li><a href="#">Доступна новая прошивка (v.1.91) для BiomedisM</a></li>
-                                <li><a href="#">Интересно: обновление прошивок</a></li>
-                            </ul>
-                            <div class="alg-right"><a href="#" style="color:#fff;">еще новости <span class="glyphicon glyphicon-chevron-right"></span></a></div>
-                        </div>
-                        <div class="clear-bth"></div>
-                    </div>
+                <div class="col-lg-4 chat-box-right">
+                    <h3 class="alg-center clr-darkviolet bottom-border" style="margin-top:0px; padding-bottom:10px;">Диалоги</h3>
+                    <ul class="dialog-list">
+                        <li>Альбина Петрова <span class="badge dark-badge">2</span></li>
+                        <li>Глеб Петров <span class="badge dark-badge">1</span></li>
+                        <li class="active">Петр Иванов</li>
+                        <li>Кристина Авдеева</li>
+                        <li>Григорий Пушкин</li>
+                        <li>Тикет #5</li>
+                        <li>Тикет #4</li>
+                        <li>Тикет #3</li>
+                        <li>Тикет #2</li>
+                        <li>Тикет #1</li>
+                        <li>Георгий Победоносец</li>
+                        <li>Урук Хай</li>
+                        <li>Саурман Белый</li>
+                        <li>Довакин Вайтранский</li>
+                        <li>Истграмор Дунфский</li>
+                        <li>Капитан Шепард</li>
+                        <li>Капитан Крюк</li>
+                        <li>Мистер Андерссон</li>
+                    </ul>
                 </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-blogs">
-                    <div class="tile">
-                        <img src="imagesi/blog.png"/>
-                        <div>блоги</div>
-                        <a href="#" title="Добавить запись в блог"><span></span></a>
-                        <a href="#" title="Открыть страницу своего блога"><span></span></a>
-                        <a href="#" title="Все блоги"><span></span></a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-users">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/user.png"/>
-                            <div>пользователи</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-devices">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/devices.png"/>
-                            <div>приборы</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 tile-base tile-wiki">
-                        <div class="tile row">
-                            <a href="#">
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <span class="txt-bold">БРТ Wiki</span><br/>
-                                    <span>Справочник</span>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 alg-right">
-                                    <img src="imagesi/wiki.png"/>
-                                </div>
-                            </a>
-                        </div>
-
-                </div>
-
-                <div class="clearfix"></div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-settings">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/devices.png"/>
-                            <div>настройки</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-faq">
-                    <div class="tile">
-                        <span class="badge"><a href="#" title="Два новых ответа в вопросах, в которых вы участвуете">2</a> &nbsp;|&nbsp; new</span>
-                        <div>консультация</div>
-                        <div><a href="#" class="btn btn-default">Ответы</a> <a href="#"  class="btn btn-primary">Спросить</a></div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-support">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/supp.png"/>
-                            <div>служба поддержки</div>
-                        </div>
-                    </a>
-                </div>
-
-
-
 
 
             </div>
+
+
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right-container">
             <div class="col-lg-12">
@@ -324,19 +268,6 @@
             <div class="corner-right-footer"></div>
         </div>
     </div>
-
-    <!--<div class="row alg-center">-->
-        <!--<div class="col-lg-12 clr-darkviolet">-->
-            <!--<ul class="list-inline socials">-->
-                <!--<li><b>&copy; BiomedisOnline, 2016</b></li>-->
-                <!--<li><a href="#">О проекте</a></li>-->
-                <!--<li><a href="#">Условия и соглашения</a></li>-->
-                <!--<li><a href="#">Помощь</a></li>-->
-                <!--<li><a href="#">Обратная свзяь</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-
 </div>
 
 <!-- Service Block -->

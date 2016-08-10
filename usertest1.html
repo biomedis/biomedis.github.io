@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/mainmenu.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
 
+    <link rel="stylesheet" href="css/data-user.css"/>
+
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -77,14 +79,14 @@
                     <li class="visible-xs-block  dropup active" style="width:60px;">
                         <a class="dropdown-toggle active" data-toggle="dropdown" href="#">меню</a>
                         <ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
-                            <li><a href="#" class="active">сервисы</a></li>
-                            <li><a href="#">данные</a></li>
+                            <li><a href="#">сервисы</a></li>
+                            <li class="active"><a href="#" class="active">данные</a></li>
                             <li><a href="#">сообщения (3)</a> </li>
                             <li><a href="#">подписки</a></li>
                         </ul>
                     </li>
-                    <li class="active hidden-xs"><a href="main.html" class="active">сервисы</a></li>
-                    <li class="hidden-xs"><a href="userdata.html">данные</a></li>
+                    <li class="hidden-xs"><a href="main.html">сервисы</a></li>
+                    <li class="active hidden-xs"><a href="userdata.html" class="active">данные</a></li>
                     <li class="hidden-xs"><a href="messages.html">сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
                     <li class="hidden-xs"><a href="subscribes.html">подписки</a></li>
                 </ul>
@@ -95,132 +97,90 @@
 
     <div class="row wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left-container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-user-activity">
-                    <div class="tile">
-                        <div>моя активность</div>
 
-                        <section>
-                            <div><img src="imagesi/statistic.png"/></div>
-                            <div><a href="#">статистика</a></div>
-                            <div><span class="badge"></span></div>
-                            <div class="clear-bth"></div>
-                        </section>
+            <div class="row" style="background:rgba(255,255,255,0.3);">
+                <div class="col-lg-12 title-data-user">
 
-                        <section>
-                            <div><img src="imagesi/progr.png"/></div>
-                            <div><a href="#">программы</a></div>
-                            <div><span class="badge">1</span></div>
-                            <div class="clear-bth"></div>
-                        </section>
-
-                        <section>
-                            <div><img src="imagesi/answers.png"/></div>
-                            <div><a href="#">ответы</a></div>
-                            <div><span class="badge">3</span></div>
-                            <div class="clear-bth"></div>
-                        </section>
-
-
+                    <!-- user edit link -->
+                    <div>
+                        <a href="#subscribe" class="btn btn-default">Подписаться</a>
+                        <a href="message.html" class="btn btn-default"><span  title="Отправить сообщение" class="glyphicon glyphicon-pencil"></span></a>
                     </div>
-                </div>
+                    <!-->
 
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 tile-base tile-news">
-                    <div class="tile">
-                        <div>
-                            <div class="visible-xs-block" style="margin-top:40px;"></div>
-                            <img src="imagesi/newspapperman.png"/>
+                    <ul class="list-inline alg-center">
+                        <li>
+                            <h4 class="clr-darkviolet text-uppercase">данные пользователя</h4>
+                        </li><br/>
+                        <li>Иванов Петр</li>
+                        <li>@ivanov</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-12 body-data-user">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 alg-center">
+                            <img src="imagesi/me1.jpg" class="data-user-photo"/>
                         </div>
-                        <div>
-                            <ul class="news-list">
-                                <li><a href="#">Появился новый раздел в Wiki БРТ</a></li>
-                                <li><a href="#">Обновлена база интересных подписок</a></li>
-                                <li><a href="#">Доступна новая прошивка (v.1.91) для BiomedisM</a></li>
-                                <li><a href="#">Интересно: обновление прошивок</a></li>
+                        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                            <ul class="list-group" style="margin-top:30px;">
+                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span> &nbsp; <b>Группа</b> Врач</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-info-sign"></span> &nbsp; <b>Должность</b> Врач-терапевт</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-stats"></span> &nbsp; <b>Опыт</b> 6 лет</li>
                             </ul>
-                            <div class="alg-right"><a href="#" style="color:#fff;">еще новости <span class="glyphicon glyphicon-chevron-right"></span></a></div>
                         </div>
-                        <div class="clear-bth"></div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 about-user">
+                            <h4 class="clr-darkviolet alg-center text-uppercase">о себе</h4>
+                            <p class="alg-just">
+                                Уже давно практикую терапевтическую деятельность. Имею большой опыт и хороший стаж в этой сфере. ПОзнакомился с БРТ в 2009 году, очень интересная сфера.<br/><br/>
+                                Думаю, что смогу помочь людям, поэтому стал врачом.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
+                <div class="col-lg-12 activity-user">
+                    <h4 class="alg-center clr-darkviolet text-uppercase">активность</h4>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-blogs">
-                    <div class="tile">
-                        <img src="imagesi/blog.png"/>
-                        <div>блоги</div>
-                        <a href="#" title="Добавить запись в блог"><span></span></a>
-                        <a href="#" title="Открыть страницу своего блога"><span></span></a>
-                        <a href="#" title="Все блоги"><span></span></a>
+                    <div class="activity-item row">
+                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style="padding-top:5px;">
+                            <b>Тема Wiki "Профилактика болезней"</b>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 alg-right">
+                            <a href="#" class="btn btn-default" title="Подписка" ><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="btn btn-default" title="Открыть статью"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-users">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/user.png"/>
-                            <div>пользователи</div>
+                    <div class="activity-item row">
+                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style="padding-top:5px;">
+                            <b>Тема Wiki "Лечение гайморита"</b>
                         </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-devices">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/devices.png"/>
-                            <div>приборы</div>
+                        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 alg-right">
+                            <a href="#" class="btn btn-default" title="Подписка" ><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="btn btn-default" title="Открыть блог"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 tile-base tile-wiki">
-                        <div class="tile row">
-                            <a href="#">
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <span class="txt-bold">БРТ Wiki</span><br/>
-                                    <span>Справочник</span>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 alg-right">
-                                    <img src="imagesi/wiki.png"/>
-                                </div>
-                            </a>
-                        </div>
-
-                </div>
-
-                <div class="clearfix"></div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-settings">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/devices.png"/>
-                            <div>настройки</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-faq">
-                    <div class="tile">
-                        <span class="badge"><a href="#" title="Два новых ответа в вопросах, в которых вы участвуете">2</a> &nbsp;|&nbsp; new</span>
-                        <div>консультация</div>
-                        <div><a href="#" class="btn btn-default">Ответы</a> <a href="#"  class="btn btn-primary">Спросить</a></div>
                     </div>
-                </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-support">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/supp.png"/>
-                            <div>служба поддержки</div>
+                    <div class="activity-item row">
+                        <div class="col-lg-12">
+                            <ul class="list-inline activity-list">
+                                <li>Записи блога <span class="badge dark-badge">0</span></li>
+                                <li>Консультации <span class="badge dark-badge">12</span></li>
+                                <li>Ответы <span class="badge dark-badge">26</span></li>
+                                <li>Wiki БРТ <span class="badge dark-badge">2</span></li>
+                                <li>Комментарии <span class="badge dark-badge">45</span></li>
+                                <li>Статьи <span class="badge dark-badge">4</span></li>
+                            </ul>
                         </div>
-                    </a>
+                    </div>
+
                 </div>
-
-
-
-
 
             </div>
+
+
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right-container">
             <div class="col-lg-12">
@@ -324,19 +284,6 @@
             <div class="corner-right-footer"></div>
         </div>
     </div>
-
-    <!--<div class="row alg-center">-->
-        <!--<div class="col-lg-12 clr-darkviolet">-->
-            <!--<ul class="list-inline socials">-->
-                <!--<li><b>&copy; BiomedisOnline, 2016</b></li>-->
-                <!--<li><a href="#">О проекте</a></li>-->
-                <!--<li><a href="#">Условия и соглашения</a></li>-->
-                <!--<li><a href="#">Помощь</a></li>-->
-                <!--<li><a href="#">Обратная свзяь</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-
 </div>
 
 <!-- Service Block -->

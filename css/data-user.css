@@ -1,0 +1,68 @@
+.title-data-user {
+    border-bottom:1px solid #c9c9c9; position: relative;
+}
+
+.title-data-user > div:first-child {
+    position: absolute; right:20px; top:15px;
+}
+
+.title-data-user > ul {
+    font-size:14pt;
+    color: #6c6c6c;
+}
+
+.data-user-photo {
+    margin-top:30px;
+    max-width:180px;
+    border-radius: 8px;
+    border: 5px solid #fff;
+}
+
+.about-user {
+    background:rgba(255,255,255,0.5);
+    padding:10px;
+    margin-top:15px;
+    border-radius:7px;
+}
+
+.activity-user {
+    background:rgba(255,255,255,0.5);
+    padding:10px;
+    margin-top:15px;
+    border-radius:7px;
+}
+
+.activity-item {
+    background-color:#fff; border-radius:7px; border:1px solid #c9c9c9;
+    margin:10px;
+    padding:15px;
+}
+
+.activity-list {
+    font-size:15pt;
+    padding-top:15px;
+}
+
+.activity-list > li {
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+/*  edit  */
+
+.edit-item {
+    padding-top:15px; padding-bottom:15px;
+}
+
+.top-border {
+    border-top:1px solid #c9c9c9;
+}
+
+.bottom-border {
+    border-bottom:1px solid #c9c9c9;
+}
+
+.edit-tabs > .tab-pane {
+    background-color:#fff;
+    padding:10px;
+}
