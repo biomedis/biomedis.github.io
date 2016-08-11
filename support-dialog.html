@@ -12,17 +12,17 @@
 
     <link rel="stylesheet" href="css/acwg.textcss.css"/>
     <link rel="stylesheet" href="css/general.service.css"/>
-    <link rel="stylesheet" href="css/general.userlist.css"/>
+    <link rel="stylesheet" href="css/general.chat.css"/>
+    <link rel="stylesheet" href="css/general.support.css"/>
     <link rel="stylesheet" href="css/mainmenu.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
-
-    <link rel="stylesheet" href="css/data-user.css"/>
 
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/general-scripts.js"></script>
+
     <title>Biomedis Online</title>
 
 </head>
@@ -81,16 +81,16 @@
                     <li class="visible-xs-block  dropup active" style="width:60px;">
                         <a class="dropdown-toggle active" data-toggle="dropdown" href="#">меню</a>
                         <ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
-                            <li class="active"><a href="main.html" class="active">сервисы</a></li>
+                            <li><a href="main.html" class="active">сервисы</a></li>
                             <li><a href="userdata.html">данные</a></li>
-                            <li><a href="messages.html">сообщения (3)</a> </li>
+                            <li><a href="messages.hhrml">сообщения (3)</a> </li>
                             <li><a href="allsubscribes.html">подписки</a></li>
                         </ul>
                     </li>
-                    <li class="hidden-xs active"><a href="main.html" class="active">сервисы</a></li>
+                    <li class="active hidden-xs"><a href="main.html" class="active">сервисы</a></li>
                     <li class="hidden-xs"><a href="userdata.html">данные</a></li>
-                    <li class="hidden-xs"><a href="messages.html" >сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
-                    <li class="hidden-xs"><a href="subscribes.html">подписки</a></li>
+                    <li class="hidden-xs"><a href="messages.html">сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
+                    <li class="hidden-xs"><a href="allsubscribes.html">подписки</a></li>
                 </ul>
             </div>
 
@@ -99,88 +99,51 @@
 
     <div class="row wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left-container">
+            <div class="row" style="background:rgba(255,255,255,0.5);">
 
-            <div class="row" style="background:rgba(255,255,255,0.3);">
-
-                <div class="col-lg-12 bottom-border">
-                    <h3 class="alg-center clr-darkviolet text-uppercase">пользователи сервиса</h3>
-                </div>
-                <div class="col-lg-12 bottom-border pdng-10">
-                    <form class="form-inline alg-right">
-
-                        <div class="form-group">
-                            <div class="col-xs-9">
-                                <input type="text" placeholder="Поиск пользователя" class="form-control" name="searchField"/>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-xs-3">
-                                <input type="submit"  class="btn btn-primary" value="Найти"/>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </form>
-                </div>
+                <div class="col-lg-12" style="border-bottom:1px solid #c9c9c9;"><h3 class="alg-center clr-darkviolet text-uppercase" style="margin-top:0px;">Ваше обращение в поддержку</h3></div>
                 <div class="col-lg-12">
-                    <ul class="userlist">
-                        <li>
-                            <img src="imagesi/me.jpg"/>
-                            <span><a href="userdata.html">Кравцова Виктория</a></span>
-                            <span>Врач-диетолог</span>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-user"></span> Подписаться
-                            </a>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </li>
+                    <h3 class="clr-darkviolet alg-center">Не удается обновить устройсво</h3>
+                    <div class="col-lg-12 chat-box-left">
+                        <div class="row">
+                            <div class="col-lg-12 messages-block">
+                                <div>
+                                    <p class="alg-center old-messages clr-lightgray"><span class="glyphicon glyphicon-chevron-up"></span> загрузить более ранние сообщения</p>
+                                    <h4 class="alg-center clr-lightgray todaymark">12.08</h4>
+                                    <p class="chat-message user-message">
+                                        Здравствуйте!<br/>
+                                        Есть проблема, у меня не загружается обновление через программу.. Не знаю, что делать.
+                                    </p>
+                                    <p class="chat-message incoming-message">
+                                        Ваша заявка принята к рассмотрению. В ближайшее время специалист ответит вам.
+                                    </p>
+                                    <p class="chat-message incoming-message">
+                                        Здравствуйте, Виктория!<br/>
+                                        Не могли бы вы подробнее описать вашу проблему?
+                                    </p>
+                                    <p class="chat-message user-message">
+                                        Да. Я вставила устройство, но оно не обновляется после нажатия на кнопку. Выводится ошибка, что-то вроде Bad File Requets, trying access to memory
+                                    </p>
 
-                        <li>
-                            <img src="imagesi/me1.jpg"/>
-                            <span><a href="userdata1.html">Иванов Петр</a></span>
-                            <span>Врач-терапевт</span>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-user"></span> Подписаться
-                            </a>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </li>
+                                    <p class="chat-message incoming-message">
+                                        Попробуйте переустановить программу для обновления прошивок.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <form>
+                                    <textarea class="form-control" rows="3" style="min-width:100%; max-width:100%; min-height:100px; max-height:100px; margin-bottom:5px;" placeholder="Введите сообщение"></textarea>
+                                    <input type="file" accept="application/zip, image/jpeg, image/gif, image/png"/>
+                                    <button type="submit" class="btn btn-primary pull-right">Отправить <span class="glyphicon glyphicon-chevron-right"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
-                        <li>
-                            <img src="imagesi/me2.jpg"/>
-                            <span><a href="userdata2.html">Пушкин Григорий</a></span>
-                            <span>Научный сотрудник</span>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-user"></span> Подписаться
-                            </a>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </li>
 
-                        <li>
-                            <img src="imagesi/me3.jpg"/>
-                            <span><a href="userdata3.html">Иванова Елизавета</a></span>
-                            <span>Исследователь</span>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-user"></span> Подписаться
-                            </a>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </li>
-                    </ul>
                 </div>
 
             </div>
-
-
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right-container">
             <div class="col-lg-12">
@@ -284,6 +247,7 @@
             <div class="corner-right-footer"></div>
         </div>
     </div>
+
 </div>
 
 <!-- Service Block -->

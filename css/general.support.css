@@ -1,0 +1,12 @@
+ul.ticket-list {
+    padding:0px; margin:0px; list-style-type: none;
+}
+
+ul.ticket-list li{
+    border-bottom:1px solid #c9c9c9;
+    padding:20px;
+}
+
+li.completed {
+    text-decoration: line-through;
+}

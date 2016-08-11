@@ -12,17 +12,16 @@
 
     <link rel="stylesheet" href="css/acwg.textcss.css"/>
     <link rel="stylesheet" href="css/general.service.css"/>
-    <link rel="stylesheet" href="css/general.userlist.css"/>
+    <link rel="stylesheet" href="css/general.support.css"/>
     <link rel="stylesheet" href="css/mainmenu.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
-
-    <link rel="stylesheet" href="css/data-user.css"/>
 
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/general-scripts.js"></script>
+
     <title>Biomedis Online</title>
 
 </head>
@@ -81,16 +80,16 @@
                     <li class="visible-xs-block  dropup active" style="width:60px;">
                         <a class="dropdown-toggle active" data-toggle="dropdown" href="#">меню</a>
                         <ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
-                            <li class="active"><a href="main.html" class="active">сервисы</a></li>
+                            <li><a href="main.html" class="active">сервисы</a></li>
                             <li><a href="userdata.html">данные</a></li>
-                            <li><a href="messages.html">сообщения (3)</a> </li>
+                            <li><a href="messages.hhrml">сообщения (3)</a> </li>
                             <li><a href="allsubscribes.html">подписки</a></li>
                         </ul>
                     </li>
-                    <li class="hidden-xs active"><a href="main.html" class="active">сервисы</a></li>
+                    <li class="active hidden-xs"><a href="main.html" class="active">сервисы</a></li>
                     <li class="hidden-xs"><a href="userdata.html">данные</a></li>
-                    <li class="hidden-xs"><a href="messages.html" >сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
-                    <li class="hidden-xs"><a href="subscribes.html">подписки</a></li>
+                    <li class="hidden-xs"><a href="messages.html">сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
+                    <li class="hidden-xs"><a href="allsubscribes.html">подписки</a></li>
                 </ul>
             </div>
 
@@ -99,88 +98,50 @@
 
     <div class="row wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left-container">
+            <div class="row" style="background:rgba(255,255,255,0.5);">
 
-            <div class="row" style="background:rgba(255,255,255,0.3);">
-
-                <div class="col-lg-12 bottom-border">
-                    <h3 class="alg-center clr-darkviolet text-uppercase">пользователи сервиса</h3>
-                </div>
-                <div class="col-lg-12 bottom-border pdng-10">
-                    <form class="form-inline alg-right">
-
-                        <div class="form-group">
-                            <div class="col-xs-9">
-                                <input type="text" placeholder="Поиск пользователя" class="form-control" name="searchField"/>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-xs-3">
-                                <input type="submit"  class="btn btn-primary" value="Найти"/>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </form>
-                </div>
+                <div class="col-lg-12" style="border-bottom:1px solid #c9c9c9;"><h3 class="alg-center clr-darkviolet text-uppercase" style="margin-top:0px;">Cтраница службы поддержки</h3></div>
                 <div class="col-lg-12">
-                    <ul class="userlist">
-                        <li>
-                            <img src="imagesi/me.jpg"/>
-                            <span><a href="userdata.html">Кравцова Виктория</a></span>
-                            <span>Врач-диетолог</span>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-user"></span> Подписаться
-                            </a>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </li>
 
-                        <li>
-                            <img src="imagesi/me1.jpg"/>
-                            <span><a href="userdata1.html">Иванов Петр</a></span>
-                            <span>Врач-терапевт</span>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-user"></span> Подписаться
-                            </a>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </li>
-
-                        <li>
-                            <img src="imagesi/me2.jpg"/>
-                            <span><a href="userdata2.html">Пушкин Григорий</a></span>
-                            <span>Научный сотрудник</span>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-user"></span> Подписаться
-                            </a>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </li>
-
-                        <li>
-                            <img src="imagesi/me3.jpg"/>
-                            <span><a href="userdata3.html">Иванова Елизавета</a></span>
-                            <span>Исследователь</span>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-user"></span> Подписаться
-                            </a>
-                            <a href="#" class="btn btn-default pull-right">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </li>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#panel1">Создание тикета</a></li>
+                        <li><a data-toggle="tab" href="#panel2">Ответы <span class="badge dark-badge">1</span></a></li>
                     </ul>
+
+                    <div class="tab-content">
+                        <div id="panel1" class="tab-pane fade in active">
+                            <h3>Создать тикет</h3>
+                            <p class="alg-just pdng-15">На этой странице вы можете создать тикет (обращение) в службе поддержки. Вы можете кратко указать тему обращения, описать саму проблему и прикрепить некоторые файлы: JPG, GIF, PNG и ZIP. Ваши обращения остаются в системе, вы всегда их сможете найти в ответах этого модуля.<br/><br/>
+                                Воспользуйтесь формой ниже, чтобы создать тикет.</p><br/>
+                            <h3 class="txt-bold alg-center clr-darkviolet">Создание тикета</h3>
+                            <form>
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <input required type="text" class="input-lg form-control" placeholder="Введите тему обращения" name="topic"/>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea required rows="6" class="form-control input-lg" name="message" style="max-height:200px; min-height:200px; max-width:100%; min-width:100%;" placeholder="Введите ваше обращение. Опишите его подробно."></textarea>
+                                    </div>
+                                    <div class="col-lg-12 alg-right">
+                                        <input type="file" accept="application/zip, image/jpeg, image/gif, image/png"/>
+                                        <input type="submit" class="btn btn-lg btn-success mgn-top-15" value="Отправить"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="panel2" class="tab-pane fade">
+                            <h3>Ответы на ваши обращения</h3>
+                            <ul class="ticket-list">
+                                <li><a href="support-dialog.html">Не удается обновить устройство</a> <span class="badge dark-badge">1</span></li>
+                                <li class="completed"><a href="#">Включение устройства</a> <span class="glyphicon glyphicon-ok mgn-left-20 clr-green"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
-
-
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right-container">
             <div class="col-lg-12">
@@ -284,6 +245,7 @@
             <div class="corner-right-footer"></div>
         </div>
     </div>
+
 </div>
 
 <!-- Service Block -->

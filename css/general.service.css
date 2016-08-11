@@ -356,19 +356,24 @@ ul.news-list li > a:visited {
     text-decoration: none;
 }
 
+.tile-settings >  a > div > span {
+    font-weight:bolder;
+    font-size:71px;
+}
+
 .tile-faq > div {
     background-color: #767676;
     text-align: center;
     margin:5px;
     color:#fff;
-    padding-top:20px;
-    padding-bottom:15px;
+    padding-top:35px;
+    padding-bottom:22px;
     overflow: hidden;
 }
 
 .tile-faq  > div > span:nth-child(1) {
-    position:relative;
-    top:-15px; right:-36%;
+    position:absolute;
+    top:17px; right:20px;
     z-index:100;
 }
 
@@ -379,7 +384,7 @@ ul.news-list li > a:visited {
 
 }
 
-.tile-support > a > div {
+.tile-support > div {
     background-color: #6c6c6c;
     text-align: center;
     margin:5px;
@@ -388,21 +393,22 @@ ul.news-list li > a:visited {
     padding-top:20px;
     padding-bottom:15px;
 }
-.tile-support >  a > div > div {
+.tile-support  > div > div {
     padding-top:10px;
     font-weight:bolder;
     text-decoration: none;
 }
 
-.tile-support >  a:link > div > div, .tile-support >  a:link > div > img {
-    color:#fff;
-    transition: 1.0s;
+.tile-support > div > span:nth-child(1) {
+    position:absolute;
+    top:17px; right:20px;
+    text-transform: lowercase;
 }
 
-.tile-support >  a:hover > div > div, .tile-support >  a:hover > div > img {
-    opacity:0.6;
-    transition: 0.5s;
-    text-decoration: none;
+.tile-support > div > a {
+    position:absolute;
+    top:43px; right:20px;
+
 }
 
 
@@ -452,4 +458,24 @@ ul.topic-list {
 .topic-container > div:last-child {
     font-size:10pt;
     padding-bottom:10px;
+}
+
+ul.all-topic-list {
+    padding:0px; margin:0px;
+    text-align: center; list-style-type: none;
+}
+
+ul.all-topic-list li {
+    max-width:280px;
+    margin:10px;
+    background-color:#fff;
+    border-radius: 8px;
+    padding:10px;
+    box-shadow: 0px 10px 10px 0px #c9c9c9;
+    vertical-align: middle;
+}
+
+ul.all-topic-list li > img{
+    max-width:240px;
+    border-radius:10px;
 }

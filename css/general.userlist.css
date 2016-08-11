@@ -1,0 +1,36 @@
+ul.userlist {
+    list-style-type: none;
+    padding:0px; margin:0px;
+}
+
+ul.userlist li {
+    padding:5px;
+    transition:1s;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+ul.userlist li:hover {
+    background-color: #c9c9c9;
+    transition:0.5s;
+}
+
+ul.userlist li > img {
+    width:70px;
+    border-radius:70px; border:2px solid #fff;
+}
+
+ul.userlist li > span:nth-child(2), ul.userlist li > span:nth-child(3) {
+    font-size:14pt; margin-left:15px;
+}
+
+ul.userlist li > span:nth-child(2) {
+    font-weight: bolder;
+}
+
+ul.userlist li > span:nth-child(3) {
+    color: #5d5d5d;
+}
+
+ul.userlist li > a {
+    margin-top:15px;
+}
