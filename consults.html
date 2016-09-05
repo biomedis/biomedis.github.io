@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="css/acwg.textcss.css"/>
     <link rel="stylesheet" href="css/general.service-module.css"/>
-    <link rel="stylesheet" href="css/general.chat.css"/>
+    <link rel="stylesheet" href="css/general.consult.css"/>
     <link rel="stylesheet" href="css/service.mainmenu.css"/>
     <link rel="stylesheet" href="css/service.footer.css"/>
 
@@ -81,15 +81,15 @@
                     <li class="visible-xs-block  dropup active" style="width:60px;">
                         <a class="dropdown-toggle active" data-toggle="dropdown" href="#">меню</a>
                         <ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
-                            <li><a href="main.html">сервисы</a></li>
+                            <li class="active"><a href="main.html" class="active">сервисы</a></li>
                             <li><a href="userdata.html">данные</a></li>
-                            <li class="active"><a href="messages.html" class="active">сообщения (3)</a> </li>
+                            <li><a href="messages.html">сообщения (3)</a> </li>
                             <li><a href="allsubscribes.html">подписки</a></li>
                         </ul>
                     </li>
-                    <li class="hidden-xs"><a href="main.html">сервисы</a></li>
+                    <li class="hidden-xs active"><a href="main.html" class="active">сервисы</a></li>
                     <li class="hidden-xs"><a href="userdata.html">данные</a></li>
-                    <li class="active hidden-xs"><a href="messages.html" class="active">сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
+                    <li class="hidden-xs"><a href="messages.html" >сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
                     <li class="hidden-xs"><a href="subscribes.html">подписки</a></li>
                 </ul>
             </div>
@@ -102,67 +102,123 @@
 
             <div class="row" style="background:rgba(255,255,255,0.3);">
 
-                <div class="col-lg-8 chat-box-left">
-                    <div class="row">
-                        <div class="col-lg-12 messages-block">
-                            <div>
-                                <p class="alg-center old-messages clr-lightgray"><span class="glyphicon glyphicon-chevron-up"></span> загрузить более ранние сообщения</p>
-                                <p class="chat-message incoming-message">
-                                    Я начал читать статью вашу.
-                                </p>
-                                <hr/>
-                                <h4 class="alg-center clr-lightgray todaymark">12.08</h4>
-                                <p class="chat-message incoming-message">
-                                    Я начал читать статью вашу.
-                                </p>
-                                <p class="chat-message incoming-message">
-                                    Да, кстати, добрый день...
-                                </p>
-                                <p class="chat-message user-message">
-                                    Здравствуйте!<br/>
-                                    Должна сказать мне это приятно, напишите как прочитаете. Мне просто очень важно, чтобы эта статья была хорошо написана с точки зрения профессионализма. Скажите мне всю критику, которую сочтете нужным, так как у вас опыт большой, то вы в этой теме явно хорошо осведомлены, Иван.
-                                </p>
-                                <p class="chat-message incoming-message">
-                                    Ну, хорошо, я вам напишу позже, Вика.
-                                </p>
+                <div class="col-lg-12 bottom-border">
+                    <h3 class="alg-center clr-darkviolet text-uppercase">консультации</h3>
+                </div>
 
-                                <p class="chat-message user-message">
-                                    Ладно, я буду ждать, когда вы прочитаете статью, спасибо :)
-                                </p>
-                            </div>
+                <div class="col-lg-12">
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#panel1">Все вопросы</a></li>
+                        <li><a data-toggle="tab" href="#panel2">Ваши вопросы</a></li>
+                        <li><a data-toggle="tab" href="#panel3">Ваши консультации <span class="badge dark-badge">1</span></a></li>
+                        <li><a data-toggle="tab" href="#panel4">Подписки <span class="badge dark-badge">2</span></a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="panel1" class="tab-pane fade in active">
+                            <h3>Все вопросы</h3>
+                            <ul class="questions-list">
+                                <li>
+                                    <a href="questionpage.html"><span>Получение новых программ <span class="badge dark-badge">1</span></span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Иванов Петр</span>
+                                </li>
+
+                                <li>
+                                    <a href="questionpage.html"><span>Лечение котят <span class="badge dark-badge">1</span></span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Иванов Петр</span>
+                                </li>
+
+                                <li>
+                                    <a href="questionpage.html"><span>Установка пользовательских программ</span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Григорий Пушкин</span>
+                                </li>
+
+                                <li>
+                                    <a href="questionpage.html"><span>Курс терапии по ЖКТ</span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Иванов Петр</span>
+                                </li>
+
+                                <li>
+                                    <a href="questionpage.html"><span>Правильные диеты</span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Кравцова Виктория</span>
+                                </li>
+
+                                <li>
+                                    <a href="questionpage.html"><span>Надстройки над программами</span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Иванова Елизавета</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-lg-12">
-                            <form>
-                                <textarea class="form-control" rows="3" style="min-width:100%; max-width:100%; min-height:100px; max-height:100px; margin-bottom:5px;" placeholder="Введите сообщение"></textarea>
-                                <button type="submit" class="btn btn-primary pull-right">отправить <span class="glyphicon glyphicon-chevron-right"></span></button>
-                            </form>
+                        <div id="panel2" class="tab-pane fade">
+                            <h3>Ваши вопросы</h3>
+                            <ul class="questions-list">
+                                <li>
+                                    <a href="questionpage.html"><span>Установка пользовательских программ</span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Григорий Пушкин</span>
+                                </li>
+
+                                <li>
+                                    <a href="questionpage.html"><span>Курс терапии по ЖКТ</span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Иванов Петр</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="panel3" class="tab-pane fade">
+                            <h3>Ваши консультации</h3>
+                            <ul class="questions-list">
+                                <li>
+                                    <a href="questionpage.html"><span>Правильные диеты<span class="badge dark-badge">1</span></span></a>
+                                    <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Кравцова Виктория</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="panel4" class="tab-pane fade">
+                            <h3>Подписки</h3>
+                            <ul class="questions-list">
+                                <li>
+                                    <a href="questionpage.html"><span>Получение новых программ<span class="badge dark-badge">1</span></span></a>
+                                    <a href="#" class="btn btn-success pull-right"><span class="glyphicon glyphicon-eye-close"></span></a>                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Иванов Петр</span>
+                                </li>
+
+                                <li>
+                                    <a href="questionpage.html"><span>Лечение котят<span class="badge dark-badge">1</span></span></a>
+                                    <a href="#" class="btn btn-success pull-right"><span class="glyphicon glyphicon-eye-close"></span></a>                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Иванов Петр</span>
+                                </li>
+
+                                <li>
+                                    <a href="questionpage.html"><span>Установка пользовательских программ</span></a>
+                                    <a href="#" class="btn btn-success pull-right"><span class="glyphicon glyphicon-eye-close"></span></a>
+                                    <div class="clearfix"></div>
+                                    <span class="txt-curs">Отвечает Григорий Пушкин</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 chat-box-right">
-                    <h3 class="alg-center clr-darkviolet bottom-border" style="margin-top:0px; padding-bottom:10px;">Диалоги</h3>
-                    <ul class="dialog-list">
-                        <li>Альбина Петрова <span class="badge dark-badge">2</span></li>
-                        <li>Глеб Петров <span class="badge dark-badge">1</span></li>
-                        <li class="active">Петр Иванов</li>
-                        <li>Кристина Авдеева</li>
-                        <li>Григорий Пушкин</li>
-                        <li>Тикет #5</li>
-                        <li>Тикет #4</li>
-                        <li>Тикет #3</li>
-                        <li>Тикет #2</li>
-                        <li>Тикет #1</li>
-                        <li>Георгий Победоносец</li>
-                        <li>Урук Хай</li>
-                        <li>Саурман Белый</li>
-                        <li>Довакин Вайтранский</li>
-                        <li>Истграмор Дунфский</li>
-                        <li>Капитан Шепард</li>
-                        <li>Капитан Крюк</li>
-                        <li>Мистер Андерссон</li>
-                    </ul>
-                </div>
 
+
+                </div>
 
             </div>
 

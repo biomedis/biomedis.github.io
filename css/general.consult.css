@@ -1,0 +1,85 @@
+ul.questions-list {
+    padding:0px; margin:0px;
+    list-style-type: none;
+}
+
+ul.questions-list li {
+    padding:10px;
+    border-bottom:1px dotted #c9c9c9;
+    transition:1s;
+}
+
+ul.questions-list li:hover {
+    background-color:#c9c9c9;
+    border-bottom:1px dotted #c6c6c6;
+    transition:0.5s;
+}
+
+
+ul.questions-list li > a:first-child > span {
+    font-size:16pt;
+    padding-top:10px;
+}
+
+.question {
+    border-left:5px solid #ec1616;
+    border-radius:7px;
+    box-shadow: 0px 3px 10px 0px #c9c9c9;
+}
+
+.answer {
+    border-left:5px solid #0db13d;
+    border-radius:7px;
+    box-shadow: 0px 3px 10px 0px #c9c9c9;
+}
+
+.comments > div:first-child {
+    border-bottom:1px solid #c9c9c9;
+    border-top:1px solid #c9c9c9;
+    /*margin-bottom: 30px;*/
+}
+
+.comments > div {
+    border-bottom:1px solid #c9c9c9;
+    /*margin-bottom: 30px;*/
+}
+
+
+.comments > div > ul {
+    list-style-type: none;
+    padding:10px; margin:0px;
+    /*box-shadow: 0px 3px 10px 0px #c9c9c9;*/
+    /*border-radius:5px;*/
+}
+
+
+.comments > div > ul li img {
+    border-radius:7px;
+    box-shadow:0px 5px 10px 0px #c9c9c9;
+    border:5px solid #fff;
+    width:80px;
+}
+
+.comments > div > ul li:first-child {
+    float:left;
+    width:80px;
+    margin-right:20px;
+}
+
+.comments > div > ul li:last-child {
+    clear:both;
+}
+
+.answerTo {
+    font-weight:bolder;
+    font-style: italic;
+    opacity:0.2;
+    color:#000;
+}
+
+.add-comment-block {
+    background: rgba(142, 193, 255, 0.11);
+}
+
+
+

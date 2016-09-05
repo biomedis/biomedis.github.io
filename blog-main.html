@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="fancybox/jquery.fancybox.css"/>
 
     <link rel="stylesheet" href="css/acwg.textcss.css"/>
+    <link rel="stylesheet" href="css/general.blog.css"/>
     <link rel="stylesheet" href="css/general.service-module.css"/>
-    <link rel="stylesheet" href="css/general.chat.css"/>
     <link rel="stylesheet" href="css/service.mainmenu.css"/>
     <link rel="stylesheet" href="css/service.footer.css"/>
 
@@ -81,15 +81,15 @@
                     <li class="visible-xs-block  dropup active" style="width:60px;">
                         <a class="dropdown-toggle active" data-toggle="dropdown" href="#">меню</a>
                         <ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
-                            <li><a href="main.html">сервисы</a></li>
+                            <li class="active"><a href="main.html" class="active">сервисы</a></li>
                             <li><a href="userdata.html">данные</a></li>
-                            <li class="active"><a href="messages.html" class="active">сообщения (3)</a> </li>
+                            <li><a href="messages.html">сообщения (3)</a> </li>
                             <li><a href="allsubscribes.html">подписки</a></li>
                         </ul>
                     </li>
-                    <li class="hidden-xs"><a href="main.html">сервисы</a></li>
+                    <li class="hidden-xs active"><a href="main.html" class="active">сервисы</a></li>
                     <li class="hidden-xs"><a href="userdata.html">данные</a></li>
-                    <li class="active hidden-xs"><a href="messages.html" class="active">сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
+                    <li class="hidden-xs"><a href="messages.html" >сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
                     <li class="hidden-xs"><a href="subscribes.html">подписки</a></li>
                 </ul>
             </div>
@@ -102,72 +102,83 @@
 
             <div class="row" style="background:rgba(255,255,255,0.3);">
 
-                <div class="col-lg-8 chat-box-left">
-                    <div class="row">
-                        <div class="col-lg-12 messages-block">
-                            <div>
-                                <p class="alg-center old-messages clr-lightgray"><span class="glyphicon glyphicon-chevron-up"></span> загрузить более ранние сообщения</p>
-                                <p class="chat-message incoming-message">
-                                    Я начал читать статью вашу.
-                                </p>
-                                <hr/>
-                                <h4 class="alg-center clr-lightgray todaymark">12.08</h4>
-                                <p class="chat-message incoming-message">
-                                    Я начал читать статью вашу.
-                                </p>
-                                <p class="chat-message incoming-message">
-                                    Да, кстати, добрый день...
-                                </p>
-                                <p class="chat-message user-message">
-                                    Здравствуйте!<br/>
-                                    Должна сказать мне это приятно, напишите как прочитаете. Мне просто очень важно, чтобы эта статья была хорошо написана с точки зрения профессионализма. Скажите мне всю критику, которую сочтете нужным, так как у вас опыт большой, то вы в этой теме явно хорошо осведомлены, Иван.
-                                </p>
-                                <p class="chat-message incoming-message">
-                                    Ну, хорошо, я вам напишу позже, Вика.
-                                </p>
-
-                                <p class="chat-message user-message">
-                                    Ладно, я буду ждать, когда вы прочитаете статью, спасибо :)
-                                </p>
-                            </div>
+                <div class="col-lg-12 bottom-border">
+                    <h3 class="alg-center clr-darkviolet text-uppercase">блоги</h3>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="border-right:2px dotted #c9c9c9;">
+                    <p class="alg-center text-uppercase txt-bold pdng-10" style="border-bottom:1px solid #c9c9c9;">темы блогов</p>
+                    <form>
+                        <div style="overflow-y: scroll; max-height:350px;">
+                            <p><input type="checkbox" name="1" value="1"> Про котят</p>
+                            <p><input type="checkbox" name="2" value="2" checked> Про собак</p>
+                            <p><input type="checkbox" name="3" value="3" checked> Про красивое</p>
+                            <p><input type="checkbox" name="4" value="4"> Фантазия</p>
+                            <p><input type="checkbox" name="5" value="5"> Отсутсвует</p>
+                            <p><input type="checkbox" name="6" value="6"> Что бы </p>
+                            <p><input type="checkbox" name="6" value="6"> Еще</p>
+                            <p><input type="checkbox" name="6" value="6"> Написать</p>
+                            <p><input type="checkbox" name="6" value="6"> Для заглушек</p>
+                            <p><input type="checkbox" name="6" value="6"> А еще</p>
+                            <p><input type="checkbox" name="6" value="6"> ЧТобы</p>
+                            <p><input type="checkbox" name="6" value="6"> Прокуртка появилась</p>
                         </div>
-                        <div class="col-lg-12">
-                            <form>
-                                <textarea class="form-control" rows="3" style="min-width:100%; max-width:100%; min-height:100px; max-height:100px; margin-bottom:5px;" placeholder="Введите сообщение"></textarea>
-                                <button type="submit" class="btn btn-primary pull-right">отправить <span class="glyphicon glyphicon-chevron-right"></span></button>
-                            </form>
+                        <p class="alg-right"><input type="button"  class="btn btn-default" value="Применить"></p>
+                        <p class="clr-gray">Отметьте галочкой темы, которые хотите найти.</p>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 blog-items">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <img src="imagesi/facebook.jpg" class="thumbnail" style="max-width:100%;"/>
+                        </div>
+
+                        <div class="col-xs-9">
+                            <h4>Что такое еда? <a href="#">@vasya</a></h4>
+                            Блог о том, как надо питаться, кушать, делиться с котятами и прочее.
+                            <br/><a href="#"  class="btn btn-default pull-right">Подписаться <span class="glyphicon glyphicon-edit"></span></a>
+                        </div>
+                        <div class="col-xs-12 tags">
+                            <h4 class="alg-center text-uppercase mgn-bottom-20">Теги блога</h4>
+                            <span>Про собак</span> <span>Про котят</span> <span>Про собак</span>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 chat-box-right">
-                    <h3 class="alg-center clr-darkviolet bottom-border" style="margin-top:0px; padding-bottom:10px;">Диалоги</h3>
-                    <ul class="dialog-list">
-                        <li>Альбина Петрова <span class="badge dark-badge">2</span></li>
-                        <li>Глеб Петров <span class="badge dark-badge">1</span></li>
-                        <li class="active">Петр Иванов</li>
-                        <li>Кристина Авдеева</li>
-                        <li>Григорий Пушкин</li>
-                        <li>Тикет #5</li>
-                        <li>Тикет #4</li>
-                        <li>Тикет #3</li>
-                        <li>Тикет #2</li>
-                        <li>Тикет #1</li>
-                        <li>Георгий Победоносец</li>
-                        <li>Урук Хай</li>
-                        <li>Саурман Белый</li>
-                        <li>Довакин Вайтранский</li>
-                        <li>Истграмор Дунфский</li>
-                        <li>Капитан Шепард</li>
-                        <li>Капитан Крюк</li>
-                        <li>Мистер Андерссон</li>
-                    </ul>
-                </div>
 
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <img src="imagesi/facebook.jpg" class="thumbnail" style="max-width:100%;"/>
+                        </div>
 
+                        <div class="col-xs-9">
+                            <h4>Что такое еда? <a href="#">@vasya</a></h4>
+                            Блог о том, как надо питаться, кушать, делиться с котятами и прочее.
+                            <br/><a href="#"  class="btn btn-default pull-right">Подписаться <span class="glyphicon glyphicon-edit"></span></a>
+                        </div>
+                        <div class="col-xs-12 tags">
+                            <h4 class="alg-center text-uppercase mgn-bottom-20">Теги блога</h4>
+                            <span>Про собак</span> <span>Про котят</span> <span>Про собак</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <img src="imagesi/facebook.jpg" class="thumbnail" style="max-width:100%;"/>
+                        </div>
+
+                        <div class="col-xs-9">
+                            <h4>Что такое еда? <a href="#">@vasya</a></h4>
+                            Блог о том, как надо питаться, кушать, делиться с котятами и прочее.
+                            <br/><a href="#"  class="btn btn-default pull-right">Подписаться <span class="glyphicon glyphicon-edit"></span></a>
+                        </div>
+                        <div class="col-xs-12 tags">
+                            <h4 class="alg-center text-uppercase mgn-bottom-20">Теги блога</h4>
+                            <span>Про собак</span> <span>Про котят</span> <span>Про собак</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-
         </div>
+
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right-container">
             <div class="col-lg-12">
                 <h4 class="clr-darkviolet">Интересные подписки</h4>

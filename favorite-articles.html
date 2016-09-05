@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css"/>
+
+    <link rel="stylesheet" href="css/acwg.textcss.css"/>
+    <link rel="stylesheet" href="css/general.wiki.css"/>
+    <link rel="stylesheet" href="css/general.service-module.css"/>
+    <link rel="stylesheet" href="css/service.mainmenu.css"/>
+    <link rel="stylesheet" href="css/service.footer.css"/>
+
+    <link rel="stylesheet" href="css/service.data-user.css"/>
+
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="fancybox/jquery.fancybox.pack.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/general-scripts.js"></script>
+    <title>Biomedis Online</title>
+
+</head>
+
+<body>
+
+<div class="container-fluid main-block">
+
+    <nav role="navigation" class="navbar center-block top-menu navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" style="background-color:#e0e0e0;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="imagesi/left-corner.jpg" class="left-corner"/>
+            <a href="#" class="navbar-brand"><img src="imagesi/logo.png" class="logotype"/></a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse" style="padding-right:15px;">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="wikimain.html">Wiki</a></li>
+                <li><a href="blogs.html">Блоги</a></li>
+                <li><a href="faq.html">Консультации</a></li>
+                <li><a href="support.html">Помощь</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="#">Биомедис</a></li>
+
+                <li><a href="login.html">ВЫХОД</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row wiki-header wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.6s">
+        <div class="col-xs-12">
+            <h3 class="clr-darkviolet"><b>WIKI</b> БРТ</h3>
+            <h4 class="clr-lightblue">Биорезонансный справочник</h4>
+        </div>
+    </div>
+
+    <div class="row wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
+        <div class="col-xs-12">
+
+            <div class="row" style="background:rgba(255,255,255,0.3);">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 alg-center">
+                    <p class="alg-center text-uppercase txt-bold pdng-10" style="margin-top:10px;">навигация</p>
+                    <ul class="navigation-wiki">
+                        <li><a href="topics.html">Рубрики</a></li>
+                        <li><a href="favorite-articles.html">Избранные статьи</a></li>
+                        <li><a href="new-articles.html">Новые статьи</a></li>
+                    </ul>
+                    <a href="random-article.html" class="btn btn-default">Случайная статья</a>
+
+                    <p class="alg-center text-uppercase txt-bold pdng-10" style="border-top:1px solid #ebe3ed;margin-top:20px;">поиск статей</p>
+                    <form class="form-inline" style="margin-top:10px;" action="/searchwiki">
+                        <div class="form-group">
+                            <div class="col-xs-9">
+                                <input type="text" name="text" class="form-control" placeholder="Найти"/>
+                            </div>
+                            <div class="col-xs-2 alg-left">
+                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 pdng-30" style="border-left:2px dotted #ebe3ed;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="clr-darkviolet alg-center text-uppercase">избранные статьи</h3>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="clr-lightgray alg-just"><b>Что такое "Избранные статьи?"</b> Это статьи, которые имею самый высокий рейтинг в справочной системе. Этот рейтинг вычисляется исходя из количества положительных отметок у статьи. Здесь выводится список из 100 статей, которые получили самый высокий рейтинг за всё время.</p>
+
+                            <div class="article-list">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <div><img src="imagesi/facebook.jpg"/></div>
+                                            <div>
+                                                <b>Что такое БРТ?</b><br/>
+                                                <p>тут краткое содержание и вообще...</p>
+                                            </div>
+                                            <div class="clear-bth"></div>
+                                            <div class="article-topics">
+                                                <span>БРТ</span>
+                                                <span>Котята</span>
+                                                <span>Котики</span>
+                                                <span>Волны</span>
+                                                <span>Фантазия</span>
+                                            </div>
+
+                                            <a href="article.html" class="btn btn-primary pull-right">Читать</a>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+
+
+                                    </ul>
+                                    <button class="btn btn-primary" id="showElseFavoriteArticles">Показать еще статьи</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row footer wow fadeIn" data-wow-duration="0.6s" data-wow-delay="0.3s" data-wow-offset="100">
+        <div class="col-lg-12 mgn-top-20 white-line clr-white">
+            <ul class="list-inline socials">
+                <li>Читать о BiomedisOnline</li>
+                <li><a href="#"><img src="imagesi/vk.jpg"/></a></li>
+                <li><a href="#"><img src="imagesi/facebook.jpg"/></a></li>
+                <li><a href="#"><img src="imagesi/twitter.jpg"/></a></li>
+                <li><a href="#"><img src="imagesi/instagram.jpg"/></a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 mgn-top-25">
+            <span class="clr-white txt-bold">Разделы</span>
+            <ul class="footer-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Wiki</a></li>
+                <li><a href="#">Приборы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Консультация</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 alg-center" style="position: relative; z-index:10; bottom:-15px;">
+            <ul class="list-inline footer-menu-politic">
+                <li><b>&copy; BiomedisOnline, 2016</b></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Условия и соглашения</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Обратная свзяь</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 alg-center white-line clr-white mgn-top-15">
+            <img src="imagesi/logo-biomedis.png" width="120"/>
+            <div class="corner-right-footer"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Service Block -->
+<div class="scrollup">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+</div>
+<!-- END Service Block-->
+
+</body>
+
+</html>

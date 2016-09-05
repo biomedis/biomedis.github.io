@@ -1,0 +1,12 @@
+.blog-items > div {
+    padding:10px;
+    border-bottom: 1px dotted #c9c9c9;
+    margin-bottom:30px;
+}
+
+.tags > span {
+    margin:10px; padding:8px;
+    background-color: #50508d;
+    border-radius:7px;
+    color: #fff;
+}
